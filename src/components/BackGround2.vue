@@ -18,7 +18,12 @@
       >
         <Slide v-for="(item, index) in images" :key="index">
           <div class="image-container">
-            <img :src="item.src" alt="" class="image" loading="lazy" />
+            <img
+              :src="`${import.meta.env.BASE_URL}${item.src}`"
+              alt=""
+              class="image"
+              loading="lazy"
+            />
             <p class="label">{{ item.date }}</p>
           </div>
         </Slide>
@@ -34,15 +39,15 @@ import { ref, watch } from 'vue';
 import party from 'party-js';
 
 const images = ref([
-  { src: '/images/slide1.jpg', date: '12-01-2024' },
-  { src: '/images/slide2.jpg', date: '12-01-2024' },
-  { src: '/images/slide4.jpg', date: '12-01-2024' },
-  { src: '/images/slide8.jpg', date: '12-01-2024' },
-  { src: '/images/slide9.jpg', date: '16-01-2025' },
-  { src: '/images/slide3.jpg', date: '08-02-2025' },
-  { src: '/images/slide5.jpg', date: '23-04-2025' },
-  { src: '/images/slide6.jpg', date: '23-04-2025' },
-  { src: '/images/slide7.jpg', date: '23-04-2025' },
+  { src: '/happy-birthday/images/slide1.jpg', date: '12-01-2024' },
+  { src: '/happy-birthday/images/slide2.jpg', date: '12-01-2024' },
+  { src: '/happy-birthday/images/slide4.jpg', date: '12-01-2024' },
+  { src: '/happy-birthday/images/slide8.jpg', date: '12-01-2024' },
+  { src: '/happy-birthday/images/slide9.jpg', date: '16-01-2025' },
+  { src: '/happy-birthday/images/slide3.jpg', date: '08-02-2025' },
+  { src: '/happy-birthday/images/slide5.jpg', date: '23-04-2025' },
+  { src: '/happy-birthday/images/slide6.jpg', date: '23-04-2025' },
+  { src: '/happy-birthday/images/slide7.jpg', date: '23-04-2025' },
 ]);
 const currentSlide = ref(0);
 

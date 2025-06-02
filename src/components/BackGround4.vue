@@ -92,7 +92,6 @@ party.confetti(document.body, {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Pacifico', cursive;
 }
 
 .card {
@@ -103,11 +102,9 @@ party.confetti(document.body, {
   text-align: center;
   z-index: 2;
   max-width: 800px;
-  font-family: 'Pacifico', cursive;
 }
 
 .card h1 {
-  font-family: 'Pacifico', cursive;
   font-size: 2.5rem;
   color: #e84393;
   margin-bottom: 20px;
@@ -115,7 +112,6 @@ party.confetti(document.body, {
 
 .line {
   margin-bottom: 12px;
-  font-family: 'Pacifico', cursive;
 }
 
 .word {
@@ -123,6 +119,5 @@ party.confetti(document.body, {
   margin-right: 5px;
   transition: opacity 0.3s ease;
   opacity: 0;
-  font-family: 'Pacifico', cursive;
 }
 </style>

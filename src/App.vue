@@ -68,7 +68,6 @@ const currentComponent = computed(() => {
 <style>
 #app {
   width: 100% !important;
-  font-family: 'Pacifico', cursive;
 }
 
 .slide-left-right-enter-active,

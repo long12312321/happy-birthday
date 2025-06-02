@@ -34,15 +34,15 @@ import { ref, watch } from 'vue';
 import party from 'party-js';
 
 const images = ref([
-  { src: '/happy-birthday/images/slide1.jpg', date: '12-01-2024' },
-  { src: '/happy-birthday/images/slide2.jpg', date: '12-01-2024' },
-  { src: '/happy-birthday/images/slide4.jpg', date: '12-01-2024' },
-  { src: '/happy-birthday/images/slide8.jpg', date: '12-01-2024' },
-  { src: '/happy-birthday/images/slide9.jpg', date: '16-01-2025' },
-  { src: '/happy-birthday/images/slide3.jpg', date: '08-02-2025' },
-  { src: '/happy-birthday/images/slide5.jpg', date: '23-04-2025' },
-  { src: '/happy-birthday/images/slide6.jpg', date: '23-04-2025' },
-  { src: '/happy-birthday/images/slide7.jpg', date: '23-04-2025' },
+  { src: '/images/slide1.jpg', date: '12-01-2024' },
+  { src: '/images/slide2.jpg', date: '12-01-2024' },
+  { src: '/images/slide4.jpg', date: '12-01-2024' },
+  { src: '/images/slide8.jpg', date: '12-01-2024' },
+  { src: '/images/slide9.jpg', date: '16-01-2025' },
+  { src: '/images/slide3.jpg', date: '08-02-2025' },
+  { src: '/images/slide5.jpg', date: '23-04-2025' },
+  { src: '/images/slide6.jpg', date: '23-04-2025' },
+  { src: '/images/slide7.jpg', date: '23-04-2025' },
 ]);
 const currentSlide = ref(0);
 
@@ -141,10 +141,10 @@ function emitHeartBurst(targetElement) {
 }
 
 const emit = defineEmits(['updatePage']);
-// emitHeartBurst(document.body);
+emitHeartBurst(document.body);
 
 watch(currentSlide, (newIndex) => {
-  // emitHeartBurst(document.body);
+  emitHeartBurst(document.body);
   if (newIndex === images.value.length - 1) {
     setTimeout(() => {
       emit('updatePage');
@@ -161,7 +161,7 @@ watch(currentSlide, (newIndex) => {
   height: 100vh;
   color: #fff;
   text-align: center;
-  font-family: 'Comic Sans MS', cursive;
+
   display: flex;
   justify-content: center; /* căn giữa theo chiều ngang */
   align-items: center;
@@ -209,18 +209,15 @@ watch(currentSlide, (newIndex) => {
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 14px;
-  font-family: 'Pacifico', cursive;
 }
 
 .title {
   color: #1e3a8a;
   font-weight: bold;
-  font-family: 'Pacifico', cursive;
 }
 
 .description {
   color: #10b981;
   font-weight: normal;
-  font-family: 'Pacifico', cursive;
 }
 </style>

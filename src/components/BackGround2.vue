@@ -209,15 +209,18 @@ watch(currentSlide, (newIndex) => {
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 14px;
+  font-family: 'Pacifico', cursive;
 }
 
 .title {
   color: #1e3a8a;
   font-weight: bold;
+  font-family: 'Pacifico', cursive;
 }
 
 .description {
   color: #10b981;
   font-weight: normal;
+  font-family: 'Pacifico', cursive;
 }
 </style>

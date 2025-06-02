@@ -80,7 +80,7 @@ const textImage = ref([
     description: 'Make color là chính 🌈🖌️',
   },
   {
-    title: 'Coupon yêu nước 💌',
+    title: 'Couple yêu nước 💌',
     description: 'Auto đẹp đôi 💑',
   },
 ]);

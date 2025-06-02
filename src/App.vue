@@ -68,7 +68,7 @@ const currentComponent = computed(() => {
 <style>
 #app {
   width: 100% !important;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Pacifico', cursive;
 }
 
 .slide-left-right-enter-active,

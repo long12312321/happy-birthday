@@ -18,12 +18,7 @@
       >
         <Slide v-for="(item, index) in images" :key="index">
           <div class="image-container">
-            <img
-              :src="`${import.meta.env.BASE_URL}${item.src}`"
-              alt=""
-              class="image"
-              loading="lazy"
-            />
+            <img :src="item.src" alt="" class="image" loading="lazy" />
             <p class="label">{{ item.date }}</p>
           </div>
         </Slide>
